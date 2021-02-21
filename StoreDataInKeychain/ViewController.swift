@@ -6,11 +6,17 @@
 //
 
 import UIKit
+import SwiftKeychainWrapper
 
 class ViewController: UIViewController {
 
     //MARK:- Outlets
     @IBOutlet weak var txtPassword: UITextField!
+    
+    //MARK:- Variables
+    enum Keys {
+        static let password = "PASSSWORD"
+    }
     
     //MARK:- View Life Cycle
     override func viewDidLoad() {
@@ -21,6 +27,16 @@ class ViewController: UIViewController {
 
     //MARK:- Button Actions
     @IBAction func actionOnSavePassword(_ sender: Any) {
+        guard let password = txtPassword.text else {
+            return
+        }
+        
+        let savePassword = KeychainWrapper.standard.set(password, forKey: Keys.password)
+        
+        if savePassword {
+            print("Password saved successfully")
+        }
+        self.view.endEditing(true)
     }
 }
 
