@@ -44,6 +44,9 @@
                             <constraint firstItem="Kcr-QS-7Sr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="zP9-MS-qUi"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="txtPassword" destination="Kcr-QS-7Sr" id="M4D-NR-bTA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
