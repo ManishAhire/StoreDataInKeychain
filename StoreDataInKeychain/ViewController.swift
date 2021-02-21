@@ -38,6 +38,14 @@ class ViewController: UIViewController {
         }
         self.view.endEditing(true)
     }
+    
+    @IBAction func actionOnRetrievePassword(_ sender: Any) {
+        
+        guard let password = KeychainWrapper.standard.string(forKey: Keys.password) else {
+            return
+        }
+        print("Password is: \(password)")
+    }
 }
 
 extension ViewController : UITextFieldDelegate {
