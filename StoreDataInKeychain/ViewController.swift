@@ -15,5 +15,7 @@ class ViewController: UIViewController {
     }
 
 
+    @IBAction func actionOnSavePassword(_ sender: Any) {
+    }
 }
 
