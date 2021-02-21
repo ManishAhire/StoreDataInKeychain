@@ -46,6 +46,15 @@ class ViewController: UIViewController {
         }
         print("Password is: \(password)")
     }
+    
+    @IBAction func actionOnRemovePassword(_ sender: Any) {
+        let removePassword = KeychainWrapper.standard.removeObject(forKey: Keys.password)
+        
+        if removePassword {
+            print("Password removed successfully")
+        }
+        
+    }
 }
 
 extension ViewController : UITextFieldDelegate {
