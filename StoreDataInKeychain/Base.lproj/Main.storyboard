@@ -36,7 +36,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YRI-J7-0cH">
-                                <rect key="frame" x="147" y="530" width="120" height="35"/>
+                                <rect key="frame" x="147" y="520" width="120" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="120" id="gPk-ju-jNC"/>
                                     <constraint firstAttribute="height" constant="35" id="x7x-TA-NRf"/>
@@ -44,6 +44,17 @@
                                 <state key="normal" title="Retrieve Pssword"/>
                                 <connections>
                                     <action selector="actionOnRetrievePassword:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Wp9-ja-IZ0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hqK-Tg-oWB">
+                                <rect key="frame" x="147" y="575" width="120" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="EfQ-No-1sz"/>
+                                    <constraint firstAttribute="width" constant="120" id="tvX-8F-o0K"/>
+                                </constraints>
+                                <state key="normal" title="Remove Pssword"/>
+                                <connections>
+                                    <action selector="actionOnRemovePassword:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ahS-nw-oD6"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -54,8 +65,10 @@
                             <constraint firstItem="t0F-jS-L2J" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4Ch-ME-h8s"/>
                             <constraint firstItem="Kcr-QS-7Sr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7jm-q1-xwy"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Kcr-QS-7Sr" secondAttribute="trailing" constant="20" id="CaD-B9-DEd"/>
-                            <constraint firstItem="YRI-J7-0cH" firstAttribute="top" secondItem="t0F-jS-L2J" secondAttribute="bottom" constant="30" id="Ooo-DZ-2q5"/>
+                            <constraint firstItem="hqK-Tg-oWB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Oas-Ex-Txw"/>
+                            <constraint firstItem="YRI-J7-0cH" firstAttribute="top" secondItem="t0F-jS-L2J" secondAttribute="bottom" constant="20" id="Ooo-DZ-2q5"/>
                             <constraint firstItem="Kcr-QS-7Sr" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-30" id="XWC-ZD-KQ1"/>
+                            <constraint firstItem="hqK-Tg-oWB" firstAttribute="top" secondItem="YRI-J7-0cH" secondAttribute="bottom" constant="20" id="Zac-bn-yfN"/>
                             <constraint firstItem="YRI-J7-0cH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cZh-FV-6Ze"/>
                             <constraint firstItem="Kcr-QS-7Sr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="zP9-MS-qUi"/>
                         </constraints>
